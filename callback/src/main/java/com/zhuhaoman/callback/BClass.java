@@ -8,6 +8,8 @@ package com.zhuhaoman.callback;
  **/
 public class BClass {
     public void process(ICallback callback) {
+        //处理逻辑。。。
         callback.methodToCallback();
+        //处理逻辑。。。
     }
 }

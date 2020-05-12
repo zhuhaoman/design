@@ -1,0 +1,10 @@
+<beans xmlns="http://www.springframework.org/schema/beans">
+    <bean id = "rateLimiter" class="com.zhuhaoman.di.RateLimiter">
+        <constructor-arg ref="redisCounter"/>
+    </bean>
+
+    <bean id="redisCounter" class="com.zhuhaoman.di.RedisCounter" lazy-init="true">
+        <constructor-arg type="java.lang.String" value="127.0.0.1"/>
+        <constructor-arg type="java.lang.Integer" value="1234"/>
+    </bean>
+</beans>

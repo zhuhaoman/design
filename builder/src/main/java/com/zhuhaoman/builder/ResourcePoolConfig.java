@@ -2,7 +2,7 @@ package com.zhuhaoman.builder;
 
 /**
  * @ClassName ResourcePoolConfig
- * @Description TODO
+ * @Description
  * @Author zhuhaoman
  * @Date 2020/4/27 20:49
  **/
@@ -34,26 +34,26 @@ public class ResourcePoolConfig {
             return new ResourcePoolConfig(this);
         }
 
-        public Builder setName(String name) {
+        public Builder name(String name) {
             this.name = name;
             return this;
         }
 
-        public Builder setMaxTotal(int maxTotal) {
+        public Builder maxTotal(int maxTotal) {
             if (maxTotal <= 0) {
                 throw new IllegalArgumentException("...");
             }
             this.maxTotal = maxTotal;
             return this;
         }
-        public Builder setMaxIdle(int maxIdle) {
+        public Builder maxIdle(int maxIdle) {
             if (maxIdle < 0) {
                 throw new IllegalArgumentException("...");
             }
             this.maxIdle = maxIdle;
             return this;
         }
-        public Builder setMinIdle(int minIdle) {
+        public Builder minIdle(int minIdle) {
             if (minIdle < 0) {
                 throw new IllegalArgumentException("...");
             }

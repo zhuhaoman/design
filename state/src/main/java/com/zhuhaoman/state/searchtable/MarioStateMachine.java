@@ -1,5 +1,9 @@
 package com.zhuhaoman.state.searchtable;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * @ClassName MarioStateMachine
  * @Description TODO
@@ -9,4 +13,18 @@ package com.zhuhaoman.state.searchtable;
 public class MarioStateMachine {
     private int score;
 
+
+    public static void main(String[] args) {
+        List<String> names = new ArrayList<>();
+        names.add("a");
+        names.add("b");
+        names.add("c");
+        names.add("d");
+
+        Iterator iterator = names.iterator();
+        System.out.println(iterator.next());
+
+        names.add(0,"x");
+        System.out.println(iterator.next());
+    }
 }

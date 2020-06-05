@@ -30,7 +30,7 @@ build/
 ### VS Code ###
 .vscode/
 
+demo.iml
 
-target
 
-state.iml
+.idea/
